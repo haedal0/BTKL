@@ -1,1 +1,0 @@
-export function convert(date: Date): string
