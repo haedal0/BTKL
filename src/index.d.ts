@@ -1,1 +1,1 @@
-export function convert(date: Date): string
+export declare function convert(date: Date): string
