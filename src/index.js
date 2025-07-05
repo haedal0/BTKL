@@ -28,20 +28,20 @@ export function convert(date) {
 
     switch (weekDiff) {
         case -2:
-            return `저저번 주 ${dayKorean[targetDate.getDay()]}요일`
+            return `저저번 주 ${dayKorean[targetDate.getDay()]}`
         case -1:
-            return `저번 주 ${dayKorean[targetDate.getDay()]}요일`
+            return `저번 주 ${dayKorean[targetDate.getDay()]}`
         case 0:
-            return `이번 주 ${dayKorean[targetDate.getDay()]}요일`
+            return `이번 주 ${dayKorean[targetDate.getDay()]}`
         case 1:
-            return `다음 주 ${dayKorean[targetDate.getDay()]}요일`
+            return `다음 주 ${dayKorean[targetDate.getDay()]}`
         case 2:
-            return `다다음 주 ${dayKorean[targetDate.getDay()]}요일`
+            return `다다음 주 ${dayKorean[targetDate.getDay()]}`
         default:
             if (weekDiff > 0) {
-                return `${weekDiff}주 뒤 ${dayKorean[targetDate.getDay()]}요일`
+                return `${weekDiff}주 뒤 ${dayKorean[targetDate.getDay()]}`
             } else {
-                return `${-weekDiff}주 전 ${dayKorean[targetDate.getDay()]}요일`
+                return `${-weekDiff}주 전 ${dayKorean[targetDate.getDay()]}`
             }
     }
 }
